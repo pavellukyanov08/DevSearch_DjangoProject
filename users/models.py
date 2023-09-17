@@ -7,7 +7,7 @@ class Profile(models.Model):
     name = models.CharField(max_length=100, blank=True, null=True)
     email = models.EmailField(max_length=100, blank=True, null=True)
     username = models.CharField(max_length=100, blank=True, null=True)
-    shot_info = models.CharField(max_length=100, blank=True, null=True)
+    short_info = models.CharField(max_length=100, blank=True, null=True)
     bio = models.TextField(blank=True, null=True)
     img = models.ImageField(upload_to='profiles/', blank=True, null=True, default='profile/user-default.png')
     social_github = models.CharField(max_length=200, blank=True, null=True)
